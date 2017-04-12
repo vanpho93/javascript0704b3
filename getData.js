@@ -1,6 +1,17 @@
 const request = require('request');
 
-request('http://app.nhodalat.com/', function(err, response, body) {
+// request('http://app.nhodalat.com/', function(err, response, body) {
+//     console.log(body);
+// });
+
+function getList(idList, cb) {
+    const url = 'http://app.nhodalat.com/sp_by_type.php?id_type=' + idList;
+    request(url, function(err, response, body) {
+        cb(body);
+    });
+}
+
+getList(4, function(body) {
     console.log(body);
 });
 
