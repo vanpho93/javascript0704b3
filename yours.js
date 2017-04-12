@@ -15,3 +15,11 @@ function onReadFinish(data) {
 read('data.txt', onReadFinish)
 // const a = read('data.txt');
 // console.log(a);
+
+localhost://a.php
+
+// lay thong tin cua 1 san pham o database
+
+// 1 tac vu
+
+
