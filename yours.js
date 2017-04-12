@@ -7,8 +7,11 @@ function read(filename, aFunc) {
 }
 // const a = read('data.txt');
 // console.log(a);
-read('data.txt', function(data){
+
+function onReadFinish(data) {
     console.log('KET QUA: ' + data);
-})
+}
+
+read('data.txt', onReadFinish)
 // const a = read('data.txt');
 // console.log(a);
